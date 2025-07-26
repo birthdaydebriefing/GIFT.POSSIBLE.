@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MISSION: GIFT. POSSIBLE.</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 40px;
+    }
+    #msg {
+      white-space: pre-wrap;
+      font-size: 1.2rem;
+    }
+    .static {
+      font-size: 2rem;
+      color: #fff;
+      animation: flicker 0.2s infinite;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-family: 'Courier New', monospace;
+      font-size: 1rem;
+      background-color: #222;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #444;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+  </style>
+</head>
+<body>
+  <audio id="cut" src="https://www.myinstants.com/media/sounds/fallout-terminal.mp3"></audio>
+  <div id="msg">
+🚨 CLASSIFIED TRANSMISSION — MISSION: GIFT. POSSIBLE. 🚨
+
+Agent PRITESH (CODE NAMED: LUCKU),
+
+birthday.exe has been sabotaged.
+Encrypted data fragments are scattered across known coordinates — some digital, some physical.
+
+We suspect a breach within your own network.
+
+Your mission, should you choose to accept it:
+• Trace each fragment.
+• Bypass security traps.
+• Decrypt the final access point.
+• Retrieve the core file.
+
+Failure to act will result in permanent gift loss.
+
+Tracking has been disabled. You’re on your own.
+
+This transmission will now terminate.
+
+– HQ // CODEBLACK
+
+    <button class="btn" onclick="terminate()">Deploy Awesomeness 🚀</button>
+    <button class="btn" onclick="terminate()">Panic & Run 😱</button>
+  </div>
+  <script>
+    function terminate() {
+      document.getElementById('cut').play();
+      document.getElementById('msg').innerHTML = '<div class="static">[ 🛑 TRANSMISSION TERMINATED ]</div>';
+    }
+  </script>
+</body>
+</html>
